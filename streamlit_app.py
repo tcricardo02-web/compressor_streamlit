@@ -146,15 +146,15 @@ def main():
     if 'equipment_data' not in st.session_state:
         st.session_state.equipment_data = {
             'motor_type': 'Gás Natural',
-            'rpm': ensure_numeric(st.session_state.equipment_data.get('rpm', 1500)),
-            'derate': ensure_numeric(st.session_state.equipment_data.get('derate', 5)),
-            'air_cooler_power': ensure_numeric(st.session_state.equipment_data.get('air_cooler_power', 4)),
-            'cooler_pressure_drop': ensure_numeric(st.session_state.equipment_data.get('cooler_pressure_drop', 1)),
-            'cooler_temp': ensure_numeric(st.session_state.equipment_data.get('cooler_temp', 120)),
-            'stroke': ensure_numeric(st.session_state.equipment_data.get('stroke', 200)),
-            'num_cylinders': ensure_numeric(st.session_state.equipment_data.get('num_cylinders', 4)),
-            'inlet_press': ensure_numeric(st.session_state.equipment_data.get('inlet_press', 100)),
-            'discharge_press': ensure_numeric(st.session_state.equipment_data.get('discharge_press', 500)),
+            'rpm': ensure_numeric(1500),
+            'derate': ensure_numeric(5),
+            'air_cooler_power': ensure_numeric(4),
+            'cooler_pressure_drop': ensure_numeric(1),
+            'cooler_temp': ensure_numeric(120),
+            'stroke': ensure_numeric(200),
+            'num_cylinders': ensure_numeric(4),
+            'inlet_press': ensure_numeric(100),
+            'discharge_press': ensure_numeric(500),
             'performance': None,
             'cylinders': []
         }
